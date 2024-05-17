@@ -1,0 +1,15 @@
+p{
+    color: red;
+    font-size: 20px;
+}
+
+
+ul {
+    list-style-type:lower-roman;
+    color:#007bff
+
+}
+
+li{
+    font-size: 20px;
+}

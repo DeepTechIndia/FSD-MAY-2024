@@ -1,0 +1,20 @@
+table{
+    width: 50%;
+    border-collapse: collapse;
+    font-size: 20px;
+    
+}
+
+th, td {
+    border: 1px solid #dddd;
+    text-align: center;
+}
+
+th{
+    background-color: #241010;
+    color: white;
+}
+
+tr{
+    background-color: #f2f2f2;
+} 

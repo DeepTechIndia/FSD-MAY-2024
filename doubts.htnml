@@ -1,0 +1,88 @@
+
+   <!-- Attributes => Additional Information -->
+
+
+
+
+   <!-- <div style=" background-color: black;">
+
+   <img  src="img.jpg" alt="alternative name of the image" width="500" height="500" >
+
+   </div> -->
+
+
+
+
+   <!-- html => Empty box 
+
+   <p></p>
+   <h1></h1>
+   <img src="" alt="">
+   <a href=""></a>
+   <nav></nav>
+   <ul></ul>
+   <div></div>
+   form
+   <Table></Table>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  <span style="background-color: blue;">Keyword</span> Sit, cumque.</p> -->
+
+
+  
+
+
+
+   <!-- <a href="https://www.facebook.com" target="_blank">Facebook</a> -->
+
+
+   <!-- <p style="color : red; background-color: black;">paragraph</p>
+
+
+   <strong style="color : red; background-color: black;">inline</strong> -->
+
+
+
+
+
+
+
+
+<!-- 
+   semantic elements => Tags have some predefined meaning
+
+
+   h1 => doesnt have any meaning
+   p =>  -->
+
+
+
+   <!-- <header style="color : red; background-color: black;">header
+
+   </header>
+
+   <main style="color : green; background-color: black;">
+
+    <article style="color : blue; background-color: white;">article</article>
+
+    <aside>aside</aside>
+    
+    
+   </main>
+
+   <footer style="color : red; background-color: black;">
+footer
+   </footer> -->
+
+
+
+   <!-- static website => every time hole document will be loaded 
+
+   200mb => 200mb 
+
+
+   html
+   css
+   js     -->
+
+
+   <!-- <div></div> -->
