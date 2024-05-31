@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="specificity.css">
+
+
+    <style>
+    
+        p{
+            color: blue;
+        }
+
+
+        .highlight{
+            color: green  ;
+        }
+
+
+        #special{
+            color: blueviolet;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+<!-- 
+    multiple styles for the same element, 
+
+
+    highest specificity level  -->
+
+
+
+
+    <p class="highlight" id="unique-paragraph" style="color: red;">this is paragraph</p>
+
+    <p id="special" class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, officia!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>

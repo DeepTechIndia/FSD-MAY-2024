@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+
+        div{
+            margin: 20px;
+        }
+
+
+        .box1{
+            background-color: lightblue;
+            height : 150px;
+            width : 300px;
+        
+        }
+
+        .box2{
+            min-height: 100px;
+            min-width: 300px;
+            background-color: lightgreen;
+        }
+
+        .box3{
+            max-height: 100px;
+            max-width: 700px;
+            background-color: lightcoral;
+           
+
+        }
+
+        .box4{
+        height: auto;
+        width: 50%;
+        background-color: lightpink;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- border-box = width will be same as what you specified
+    content - box = total width will be changed 
+    content 
+    entire box  -->
+    
+<!-- total width = 10px + 20px + 300px + 20px + 10px -->
+
+<!-- min-height and min-width 
+
+minimum height of the element min-height it wont less than that min heightmin
+
+
+min-height : 100px
+min-width  -->
+
+
+   <div class="box1">height & width</div>
+   <div class="box2">Min-Height & Min-Width</div>
+   <div class="box3">Max-Height & Max-Width</div>
+   <div class="box4">I am Auto</div>
+</body>
+</html>
