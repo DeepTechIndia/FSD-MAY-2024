@@ -76,8 +76,8 @@ function transformArray(arr, transform) {
   //   return transformArray(result, transformArray);
 }
 
-const numbers = [1, 2, 3, 4, 5];
-transformArray(numbers, double); //[2,4,6,8,10]
+// const numbers = [1, 2, 3, 4, 5];
+// transformArray(numbers, double); //[2,4,6,8,10]
 // console.log(transformArray(numbers, square)); //[1,4,9,16,25]
 
 // function fact(n) {
@@ -98,3 +98,116 @@ transformArray(numbers, double); //[2,4,6,8,10]
 //         }
 //     }
 // }
+
+function filterArray(arr, callBack) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (callBack(arr[i])) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+// arr = numbers;
+// callBack = isEven;
+
+// result = [2,4]
+
+// if(isEven(2)){
+
+// }
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+function isOdd(num) {
+  return num % 2 !== 0;
+}
+
+// console.log(isEven(2));
+// console.log(isOdd(3));
+
+// console.log(filterArray(numbers, isEven));
+// console.log(filterArray(numbers, isOdd));
+
+// Reducing an array
+
+const arr = [1, 2, 3, 4, 5];
+
+// total = 0;
+// total =+ num => total + num => 0 + 1 => 1
+
+function reduceArray(arr, callBack, initialValue) {
+  let accumulator = initialValue;
+  for (let i = 0; i < arr.length; i++) {
+    accumulator = callBack(accumulator, arr[i]);
+  }
+  return accumulator;
+}
+
+/* reduceArray(arr, sum, 0){
+  accumulator = 10;
+  for{
+    accumulator = sum(0, 1) => 1
+    accumulator  = sum(1, 2) => 3
+    accumulator =  sum(3, 3) => 6
+    acculuator = sum(6, 4) => 10
+    acculmulator = sum(10, 5) => 15
+
+  }
+}
+
+
+return 0 + 1 => 1
+
+return 1 + 2 => 3
+
+return 3 + 3 => 6 */
+
+function sum(total, num) {
+  return total + num;
+}
+
+function product(total, num) {
+  return total * num;
+}
+
+// 20*  1 => 20
+// 20 * 0
+
+console.log(reduceArray(arr, sum, 0)); //15
+console.log(reduceArray(arr, product, 1)); //120
+
+const words = ["hello", "world", "javascript"]; //["HELLO", "WORLD", "JAVASCRIPT"]
+
+function capitalize(str) {
+  return str.toUpperCase();
+}
+
+function mapArray(arr, callBack) {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callBack(arr[1]));
+    // result.push("HELLO")
+    // result.push("WORLD")
+  }
+  return result;
+}
+
+// capitalize("qwerty"); => "QWERTY"
+// capitalize("hello") => HELLO
+
+// console.log(capitalize("qwerty"));
+
+console.log(mapArray(words, capitalize)); //["HELLO", "WORLD", "JAVASCRIPT"]
+
+// HIGHER order functions => function which take another function as an argument or an functio can return a new funtion
+
+// for each
+// map
+// filter
+// reduce
