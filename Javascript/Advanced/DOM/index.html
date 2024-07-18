@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Hello World</h1>
+
+    <p class="paragraph">This is a paragraph</p>
+    <p class="paragraph">This is a another paragraph</p>
+
+    <script>
+      console.log(window);
+      // getElementById
+      const header = document.getElementById("header");
+      //   console.log(header);
+      header.style.color = "blue";
+
+      //getElementsByClassName
+      const paragraphs = document.getElementsByClassName("paragraph");
+      console.log(paragraphs);
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.fontWeight = "bold";
+      }
+
+      //getElementByTagName
+      const paras = document.getElementsByTagName("p");
+      console.log(paras);
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.border = "1px solid black";
+      }
+
+      //querySelector
+      const firstParagraph = document.querySelector(".paragraph");
+      console.log(firstParagraph);
+      firstParagraph.style.backgroundColor = "yellow";
+
+      //querySelectorAll
+
+      const allParagraphs = document.querySelectorAll(".paragraph");
+      console.log(allParagraphs);
+
+      allParagraphs.forEach((paragraph) => {
+        paragraph.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

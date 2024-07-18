@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <!-- creating Elements -->
+
+    <div id="container">
+      <p id="existingParagraph">This is a paragraph</p>
+      <p id="onemore">one more paragraph</p>
+    </div>
+
+    <script>
+      /*   const newDiv = document.createElement("div");
+      newDiv.className = "mian";
+      newDiv.id = "1234";
+      newDiv.setAttribute("title", "created title");
+
+      newDiv.textContent = "This is a new Div element";
+
+      const container = document.getElementById("container");
+      const body = document.getElementById("body");
+
+      // [] => push
+
+      //   appenChild => adds a node to the end of the list of children of a specified parent
+      //   container.appendChild(newDiv);
+      body.appendChild(newDiv); */
+
+      const container = document.getElementById("container");
+      const newParagraph = document.createElement("p");
+      newParagraph.innerHTML = "Inserteing before Paragraph";
+
+      //prepend
+      //   container.prepend(newParagraph);
+
+      //Before
+
+      /*   const existingParagraph = document.getElementById("existingParagraph");
+      container.before(newParagraph); */
+
+      //After
+      /*  container.after(newParagraph); */
+
+      //   insertBefore
+
+      const existingParagraph = document.getElementById("existingParagraph");
+      const oneMoreParagraph = document.getElementById("onemore");
+      container.insertBefore(newParagraph, existingParagraph);
+
+      //replace Child
+
+      container.replaceChild(newParagraph, onemore);
+    </script>
+  </body>
+</html>
