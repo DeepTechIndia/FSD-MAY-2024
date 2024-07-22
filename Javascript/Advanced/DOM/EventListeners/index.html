@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showMessage()">Click Me</button>
+    <p
+      onmouseover="changeTextOnHover(this)"
+      onmouseout="reverseTextOnOut(this)"
+    >
+      Hover over Me
+    </p>
+
+    <input
+      type="text"
+      onchange="alertInputChange()"
+      placeholder="Type Something"
+    />
+
+    <button id="myButton">Second Button</button>
+
+    <p id="hoverText">Hovering over me</p>
+
+    <button id="newButton">New Button</button>
+
+    <a href="https://www.example.com" id="myLink">Go to Example.com</a>
+  </body>
+
+  <script>
+    // html attributes
+    function showMessage() {
+      alert("Hello World");
+    }
+
+    function changeTextOnHover(element) {
+      console.log(element);
+      element.innerHTML = "Mouse is over";
+    }
+
+    function reverseTextOnOut(element) {
+      element.innerHTML = "Hover over me";
+    }
+
+    function alertInputChange() {
+      console.log();
+      alert("input value changed");
+    }
+
+    const button = document.getElementById("myButton");
+
+    button.onclick = function () {
+      alert("Hello from second button");
+    };
+
+    // Onclick attributes
+
+    const hoverText = document.getElementById("hoverText");
+    hoverText.onmouseover = function () {
+      hoverText.innerHTML = "Mouse is over!";
+    };
+
+    hoverText.onmouseout = function () {
+      hoverText.innerHTML = "Mouse is out!";
+    };
+
+    // event listerns
+
+    /*     const newButton = document.getElementById("newButton");
+    newButton.addEventListener("click", function () {
+      alert("Button is  Clicked");
+    }); */
+
+    // event
+    const newButton = document.getElementById("newButton");
+    newButton.addEventListener("click", function (event) {
+      console.log(event);
+      console.log(event.type);
+      console.log(event.target);
+      alert("Button is  Clicked");
+    });
+
+    const link = document.getElementById("myLink");
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      // alert("Default Action Prevented");
+    });
+  </script>
+</html>
